@@ -126,4 +126,73 @@ footer.inline-block ul{
     margin: 0;
     padding: 0;
 }
+.flexContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    
+}
+
+.flexContainer > div {
+    width: 20%;
+    margin: 10px;
+    padding: 60px 40px;;
+    box-sizing: border-box;
+    /* Adjust below as needed for your design */
+    text-align: center;
+    border: 2px solid #000; /* Example border: 2px solid black */
+    border-radius: 10px; /* Rounded corners for the border */
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+}
+.flexContainer > div img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+.flexContainer > div h3,
+.flexContainer > div p {
+    margin: 20px 0; /* Add top and bottom margins for spacing */
+}
+
+/* Enhanced hover effect */
+.flexContainer > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.workGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+    margin-top: 60px;
+    
+}
+
+/* For larger screens, you might want to adjust the number of columns */
+
+
+.workGrid > div {
+    color: blue;
+    border: 2px solid #000; /* Example border: 2px solid black */
+    border-radius: 10px;
+    padding: 100px 80px;;
+    box-sizing: border-box;
+   
+}
+
+.workGrid img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
 
