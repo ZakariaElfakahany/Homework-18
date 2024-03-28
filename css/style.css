@@ -8,27 +8,30 @@
     font-size: 25px;
     font-family: "Nunito", sans-serif;
     color: blue;
-    width: auto;
-    /*padding: 2%; */ 
+    
     
 }
 
 nav.inline-block {
     font-family: "Nunito", sans-serif;
     font-size: 20px;
+    color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
     
+    
 }
 nav.inline-block ul {
+    list-style: none;
    
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0; 
-    padding: 0;  
+    padding: 0; 
+    margin-left: 20px; 
 }
 nav.inline-block button {
     padding: 10px 20px; 
@@ -56,7 +59,7 @@ nav ul {
     justify-content: center;
     width: 50%;
     margin-top: auto;
-
+    margin-left: 20px;
     text-align: center;
 }
 
@@ -110,6 +113,7 @@ button{
         border-radius: 3px; 
         cursor: pointer; 
         font-size: 20px; 
+        background-color: white;
 }
 
 
@@ -148,27 +152,26 @@ footer.inline-block ul{
     margin: 10px;
     padding: 60px 40px;;
     box-sizing: border-box;
-    /* Adjust below as needed for your design */
     text-align: center;
-    border: 2px solid blue; /* Example border: 2px solid black */
-    border-radius: 10px; /* Rounded corners for the border */
+    border: 2px solid blue; 
+    border-radius: 10px; 
     display: flex;
     flex-direction: column; 
     justify-content: space-around;
     align-items: center;
 }
 .flexContainer > div img {
-    max-width: 50px; /* Ensure images are responsive */
+    max-width: 50px; 
     height: auto;
-    margin-bottom: 20px; /* Add space below the image */
+    margin-bottom: 20px; 
 }
 
 .flexContainer > div h3,
 .flexContainer > div p {
-    margin: 20px 0; /* Add top and bottom margins for spacing */
+    margin: 20px 0; 
 }
 
-/* Enhanced hover effect */
+
 .flexContainer > div:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
@@ -184,21 +187,21 @@ footer.inline-block ul{
 
 .project {
     display: flex;
-    align-items: flex-start; /* Adjust this as needed */
+    align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 180px; /* Adds space between projects */
-    gap: 20px; /* Optional: Adds space between flex items */
+    margin-bottom: 180px; 
+    gap: 20px;
 }
 
 .project img {
-    flex: 1; /* Allows the image to take up half of the container */
-    width: 100%; /* Ensures the image fills its container */
-    height: auto; /* Keeps the image aspect ratio */
-    object-fit: cover; /* Adjusts the image size tsts the image size to cover the container without losing aspect ratio */
+    flex: 1; 
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
 }
 
 .project-info {
-    flex: 1; /* Allows the text content to take up the other half */
+    flex: 1; 
     text-align: left;
     padding: 0 20px; 
 }
@@ -214,15 +217,15 @@ footer.inline-block ul{
 .project-info p {
     text-align: left;
     margin-top: 10px;
-    margin-bottom: 20px; /* Space above the button */
+    margin-bottom: 20px; 
 }
 
 .project-info button {
     padding: 10px 20px;
 }
 
-/* Optional: Add hover effect to the button */
+
 button:hover {
     color: white;
-    background-color: darkblue; /* Darker shade when hovered */
+    background-color: darkblue; 
 }
