@@ -152,12 +152,12 @@ footer.inline-block ul{
     margin: 10px;
     padding: 60px 40px;;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
     border: 2px solid blue; 
     border-radius: 10px; 
     display: flex;
     flex-direction: column; 
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .flexContainer > div img {
@@ -168,10 +168,14 @@ footer.inline-block ul{
 
 .flexContainer > div h3,
 .flexContainer > div p {
+    text-align: left;
     margin: 20px 0; 
 }
 
-
+.mySkills {
+    margin: 0px;
+    padding: 75px;
+}
 .flexContainer > div:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
@@ -181,8 +185,8 @@ footer.inline-block ul{
     text-align: left;
 }
 .myWork {
-    margin: 125px;
-    padding: 125px;
+    margin: 75px;
+    padding: 75px;
 }
 
 .project {
